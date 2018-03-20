@@ -10,7 +10,7 @@ import com.jnj.atmmachine.validator.ATMMachineRequestValidator;
 
 public class PostATMMachineService extends AbstractService {
 
-private ATMMachineRequestValidator requestValidator;
+	private ATMMachineRequestValidator requestValidator;
 	
 	private ATMMachineRequestManager requestManager;
 	

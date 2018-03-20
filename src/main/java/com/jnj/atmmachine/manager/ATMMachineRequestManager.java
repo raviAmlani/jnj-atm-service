@@ -64,7 +64,7 @@ public class ATMMachineRequestManager {
 	 * dispense money, count notes
 	 * deduct it from customer's balance
 	 * deduct it from overdraft, if required
-	 * put an entry in daily withdrawals
+	 * TODO - put an entry in daily withdrawals
 	 */
 	public ATMMachineRequestResult withdrawMoney(String accountNumber, int withdrawalAmount) {
 		

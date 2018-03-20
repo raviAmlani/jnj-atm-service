@@ -1,8 +1,6 @@
 package com.jnj.atmmachine.environment;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
 import java.util.List;
 import java.util.TreeSet;
 
@@ -63,18 +61,5 @@ public class ApplicationData {
 		}
 		return denominationAll;
 	}
-	
-	/*private long calculateBalanceMoney(TreeSet<Denomination> denominationAll) {
-		
-		long balanceMoney = 0;
-		Iterator<Denomination> iterator = denominationAll.iterator();
-		
-		while (iterator.hasNext()) {
-			Denomination d = iterator.next();
-			balanceMoney += (d.getNoteValue() * d.getNoteQuantity()); 
-		}
-		
-		return balanceMoney;
-	}*/
 
 }

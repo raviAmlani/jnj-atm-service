@@ -9,7 +9,6 @@ import com.jnj.atmmachine.dao.ATMMachineDaoImpl;
 import com.jnj.atmmachine.dao.CustomerAccountDao;
 import com.jnj.atmmachine.dao.CustomerAccountDaoImpl;
 import com.jnj.atmmachine.environment.ApplicationData;
-import com.jnj.atmmachine.helper.ATMMachineHelper;
 import com.jnj.atmmachine.helper.ErrorMessageProvider;
 import com.jnj.atmmachine.http.controller.ControllerHelper;
 import com.jnj.atmmachine.manager.ATMMachineRequestManager;
@@ -38,11 +37,6 @@ public class GeneralBeanConfiguration {
 	@Bean
 	public ATMMachineRequestManager atmMachineRequestManager() {
 		return new ATMMachineRequestManager();
-	}
-	
-	@Bean
-	public ATMMachineHelper atmMachineHelper() {
-		return new ATMMachineHelper();
 	}
 	
 	@Bean

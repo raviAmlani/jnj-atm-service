@@ -19,8 +19,6 @@ public class ATMMachine {
 	
 	private List<Withdrawal> withdrawalsAll;
 	
-	private long balanceMoney;
-
 	public TreeSet<Denomination> getDenominationAll() {
 		return denominationAll;
 	}

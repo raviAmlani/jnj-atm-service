@@ -1,16 +1,13 @@
 package com.jnj.atmmachine.dao;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
-import java.util.SortedSet;
 import java.util.TreeSet;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.jnj.atmmachine.environment.ApplicationData;
-import com.jnj.atmmachine.model.Customer;
 import com.jnj.atmmachine.model.Denomination;
 import com.jnj.atmmachine.model.Withdrawal;
 
@@ -25,11 +22,6 @@ private ApplicationData applicationData;
 	@Autowired
 	public void setApplicationData(ApplicationData applicationData) {
 		this.applicationData = applicationData;
-	}
-
-	public boolean validateCustomer(Customer customer) {
-		// TODO Auto-generated method stub
-		return false;
 	}
 
 	@Override
@@ -61,7 +53,7 @@ private ApplicationData applicationData;
 	}
 
 	@Override
-	public void updateAllWithdrawals(String accountNumber, int amount) {
+	public void updateWithdrawals(String accountNumber, int amount) {
 		// TODO Auto-generated method stub
 		
 	}

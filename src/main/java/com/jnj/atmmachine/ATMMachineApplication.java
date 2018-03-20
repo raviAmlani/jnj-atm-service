@@ -14,8 +14,6 @@ import com.jnj.atmmachine.environment.ATMMachine;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.jnj.atmmachine.configuration", "com.jnj.atmmachine.http.controller"})
-//@ComponentScan
-//@EnableConfigurationProperties
 @EnableConfigurationProperties(ATMMachine.class)
 @EnableAutoConfiguration
 public class ATMMachineApplication

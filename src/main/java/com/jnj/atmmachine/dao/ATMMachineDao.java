@@ -15,6 +15,6 @@ public interface ATMMachineDao {
 	
 	public List<Withdrawal> fethcAllWithdrawals();
 	
-	public void updateAllWithdrawals(String accountNumber, int amount);
+	public void updateWithdrawals(String accountNumber, int amount);
 	
 }
