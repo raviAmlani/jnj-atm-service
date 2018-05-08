@@ -1,0 +1,69 @@
+com.ravi.jnj.atmmachine
+
+ATMMachineApplication.java
+
+GetATMMachineController.java
+PostATMMachineController.Java
+
+GetATMMachineService.Java
+PostATMMachineService.Java
+
+ATMMachineManager.Java
+
+ATMMachineHelper.Java
+
+ATMMachineValidator.Java
+
+ATMMachineException.Java
+UserAccountException.Java
+
+dao
+  UserAccountDao
+  UserAccountDaoImpl
+  ATMMachineDao
+  ATMMachineDaoImpl
+
+param
+  ATMMachineParam
+    associates (Customer)
+    requestAmount
+
+result
+  DenominationResult
+    List<Denomination>
+  CustomerResult
+  ATMMachineRequestResult
+    associates
+      Error - Code/Message
+      DenominationResult
+      CustomerResult
+
+model
+  ATMMachine associates List of Denomination, List of Customer
+  Denomination
+  Customer // dailyWithdrawalLimit  // feature should be implemented later
+  Error
+
+environment
+  ApplicationData.java
+
+configuration
+    GeneralBeanConfiguration.Java
+
+constants
+  ATMMachineEndPoints.Java
+  ATMMachineConstants.Java
+
+Request Inputs can be:
+path variables
+  accountNumber
+  pin
+  requestAmount
+urls:
+  /balanceInquiry
+    remaining balance
+    // daily/remaining withdrawal limit
+  /withdrawMoney
+    amount with denomination details
+    remaining balance
+    // daily/remaining withdrawal limit
